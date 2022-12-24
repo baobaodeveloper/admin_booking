@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Poppins, sans-serif;
+  }
+  html::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  .app.dark {
+    background-color: rgb(39, 38, 38);
+    .dark-paper {
+      -webkit-box-shadow: 2px 2px 2px 3px rgba(255, 255, 255, 0.76);
+      box-shadow: 2px 2px 2px 3px rgba(255, 255, 255, 0.76);
+      background-color: transparent;
+
+      .money-paper {
+        color: rgba(156, 163, 175, 1);
+      }
+      .css-1ptx2yq-MuiInputBase-root-MuiInput-root:before {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+      }
+      .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+        border-color: rgba(255, 255, 255, 0.42);
+      }
+
+      .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root,
+      .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root,
+      .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon,
+      .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select,
+      .css-i4bv87-MuiSvgIcon-root {
+        color: #9ca3af;
+      }
+    }
+    .dark-table {
+      color: rgba(156, 163, 175, 1);
+    }
+    .input-text {
+      color: rgba(156, 163, 175, 1);
+    }
+    .bg-sidebar {
+      background-color: rgb(39, 38, 38);
+    }
+  }
+
+  .chart {
+    .recharts-wrapper {
+      height: 100% !important;
+      .recharts-surface {
+        height: 100% !important;
+      }
+    }
+  }
+}
